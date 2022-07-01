@@ -137,7 +137,6 @@ export default {
    postsResponse: "",
   };
  },
-
  methods: {
   getAllPosts(postPage) {
    axios
@@ -164,7 +163,6 @@ export default {
     .catch(e => {
         console.error(e)
     })
-
   },
   getAllTags(){
     axios.get('/api/tags')
@@ -175,9 +173,7 @@ export default {
     .catch(e => {
         console.error(e)
     })
-
   },
-
   trimText(text){
     if(text.length > 100){
         return text.slice(0 , 100) +'...'
@@ -185,7 +181,6 @@ export default {
     return text
   }
  },
-
  mounted() {
   console.log("mounted");
   this.getAllPosts(1);
@@ -197,7 +192,6 @@ export default {
 
 
 <style lang="scss">
-
 aside{
     .widget{
         margin-bottom: 1rem;
@@ -206,5 +200,5 @@ aside{
         background-color: rgb(226, 221, 221);
     }
 }
-
 </style>
+

@@ -11,7 +11,7 @@ const routes = [
   { path: '/about', name: 'about', component: About },
   { path: '/posts', name: 'posts', component: Posts },
   { path: '/posts/:slug', name: 'post', component: Post },
-    { path: '/*', name: 'not-found', component: Post }
+  { path: '/*', name: 'not-found', component: NotFound },
 ]
 
 

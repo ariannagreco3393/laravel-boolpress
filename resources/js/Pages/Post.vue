@@ -46,8 +46,8 @@
 
 </div>
 
-<div class="loading text-center text-dark" v-else>
-⏲️Loading....
+<div class="loading text-center text-dark py-5" v-else>
+  <h4 class="display-3"> ⏲️Loading....</h4>
 </div>
  </div>
 </template>
@@ -57,19 +57,22 @@
 import Axios from "axios";
 export default {
  name: "Post",
-
  data() {
   return {
    post: "",
    loading:true
   };
  },
- mounted() {
+created() {
   Axios.get("/api/posts/" + this.$route.params.slug)
    .then((response) => {
     //console.log(response.data)
-    this.post = response.data;
-    this.loading = false
+    if(response.data.status_code === 404) {
+        this.$router.push({name:'not-found'})
+    } else {
+        this.post = response.data;
+        this.loading = false
+    }
    })
    .catch((e) => {
     console.error(e);
@@ -84,5 +87,4 @@ export default {
         background-color: rgba(0, 0, 0, 0.464);
         background-blend-mode: overlay;
     }
-
 </style>

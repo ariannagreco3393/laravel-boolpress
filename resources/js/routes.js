@@ -7,11 +7,13 @@ import Post from './Pages/Post'
 
 
 const routes = [
-    { path: '/',name:'home'  ,component: Home },
-    { path: '/about',name:'about'  , component: About },
-    { path: '/posts',name:'posts'  , component: Posts },
-    { path: '/posts/:slug',name:'post'  , component: Post }
-  ]
+  { path: '/', name: 'home', component: Home },
+  { path: '/about', name: 'about', component: About },
+  { path: '/posts', name: 'posts', component: Posts },
+  { path: '/posts/:slug', name: 'post', component: Post },
+    { path: '/*', name: 'not-found', component: Post }
+]
 
 
 export default routes
+

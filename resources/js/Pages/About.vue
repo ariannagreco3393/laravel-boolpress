@@ -2,7 +2,7 @@
     <div class="page">
    <div class="p-5 bg-dark text-light">
     <div class="container d-flex">
-        <img src="https://media-assets.wired.it/photos/615da806abe69756b88436bd/master/pass/Deadpool.jpg" alt="">
+        <img src="https://termoidraulicabassini.it/wp-content/uploads/2015/12/utente.png" alt="">
         <div class="ms-3">
 
         <h1 class="display-3">About me</h1>

@@ -29084,7 +29084,7 @@ var staticRenderFns = [
         _c("div", { staticClass: "container d-flex" }, [
           _c("img", {
             attrs: {
-              src: "https://media-assets.wired.it/photos/615da806abe69756b88436bd/master/pass/Deadpool.jpg",
+              src: "https://termoidraulicabassini.it/wp-content/uploads/2015/12/utente.png",
               alt: "",
             },
           }),
@@ -29729,7 +29729,7 @@ var render = function () {
       _c("router-view"),
       _vm._v(" "),
       _c("footer", { staticClass: "bg-dark text-white text-center p-5" }, [
-        _vm._v("\n\n   © Gabriele Pini\n\n "),
+        _vm._v("\n\n   © Boolean\n\n "),
       ]),
     ],
     1
@@ -45699,6 +45699,10 @@ var routes = [{
   path: '/posts/:slug',
   name: 'post',
   component: _Pages_Post__WEBPACK_IMPORTED_MODULE_3__["default"]
+}, {
+  path: '/*',
+  name: 'not-found',
+  component: _Pages_Post__WEBPACK_IMPORTED_MODULE_3__["default"]
 }];
 /* harmony default export */ __webpack_exports__["default"] = (routes);
 
@@ -45802,9 +45806,9 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\MAMP\htdocs\Laravel\laravel-boolpress\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! D:\MAMP\htdocs\Laravel\laravel-boolpress\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! D:\MAMP\htdocs\Laravel\laravel-boolpress\resources\sass\admin.scss */"./resources/sass/admin.scss");
+__webpack_require__(/*! /Applications/MAMP/htdocs/LARAVEL/laravel-boolpress /resources/js/app.js */"./resources/js/app.js");
+__webpack_require__(/*! /Applications/MAMP/htdocs/LARAVEL/laravel-boolpress /resources/sass/app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/LARAVEL/laravel-boolpress /resources/sass/admin.scss */"./resources/sass/admin.scss");
 
 
 /***/ })
